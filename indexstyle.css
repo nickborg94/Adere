@@ -1,0 +1,466 @@
+html {
+    height: 100%;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+    background-color: #2f3035;
+    background-image: url(images/background-adare-restaurant.jpg);
+    background-size: cover;
+    /* Helps make the background fit */
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    /* needs to be same px as other elements */
+} 
+
+header {
+    height: 118px;
+    text-align: center;
+}
+
+nav {
+    
+    background-color: rgba(0, 0, 0, 0.445);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+main {
+   
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 240px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-box {
+    height: 500px;
+    color: white;
+}
+
+.menu-bar {
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-button {
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px white solid;
+    cursor: pointer;
+}
+
+.active, .menu-button:hover {
+    background-color: rgb(107, 105, 105);
+    color: white;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+.list {
+    display:flex;
+    flex:1;
+  }
+  
+  .list img {
+    max-width:100%;
+    max-height:100%;
+  }
+  
+  .highlight {
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+    color:rgba(255,255,255,0.9);
+    text-shadow:2px 2px 0 rgba(0,0,0,0.8);
+    padding:2rem;
+    width:400px;
+    text-align:right;
+    background-image:url('https://secure.static.tumblr.com/f99af891319a371b9298c68137833083/jhcj1ql/6AQn6he5r/tumblr_static_food58-burger_-two-bleu-bacon.jpg');
+  
+    background-size:auto 150%;
+    background-position:top center;
+    background-repeat:no-repeat;
+  }
+  
+  .title {
+    font-size:3rem;
+    line-height:1em;
+    margin-bottom:0.5em;
+  }
+  
+  .subtitle {
+    font-size:1.5rem;
+    opacity:0.8;
+    line-height:1.2em;
+  }
+  
+  .items {
+    flex:1;
+    transition:transform 1s;
+    padding:1rem;
+  }
+  
+  .item {
+    display:flex;
+    align-items:center;
+    padding:1rem;
+  }
+  
+  .items.columns-2 .item-container {
+    width:50%;
+    float:left;
+  }
+  
+  .items.columns-2 .item-container:nth-child(odd) {
+    clear:both;
+  }
+  
+  .items.columns-2 .item-container:nth-child(odd) .item {
+    margin-right:1rem;
+  }
+  
+  .item .image {
+    width:140px;
+    text-align:left;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    display:none;
+  }
+  
+  .item .details {
+    flex:1;
+    text-align:left;
+    padding:0 1rem;
+  }
+  
+  .item .name {
+    font-weight:bold;
+    margin-bottom:0.5em;
+    font-size:125%;
+  }
+  
+  .item .label {
+    width:2em;
+    height:2em;
+    object-fit:contain;
+    position:relative;
+  }
+  
+
+  .item .price {
+    text-align:right;
+    font-size:125%;
+    font-weight:bold;
+  }
+  
+  
+
+h1 {
+    font-size: 84px;
+}
+
+.voucher-h1 {
+  font-size: 2rem;
+  margin-top: -5px;
+}
+
+.voucher-box {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  margin-left: 10px;
+  position: relative;
+}
+
+.booking-container {
+  height: 530px;
+}
+
+.booking-box {
+  background-color: rgba(0, 0, 0, 0.445);
+  height: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.booking-box h2, h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.booking-box input[type=text], input[type=date] {
+width: 50%;
+}
+
+
+.radio-input {
+  width: 50%;
+margin: 0px auto;
+text-align: center;
+}
+
+.radio-input input[type=radio], p, label {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  width: 50px;
+  border: 1px white solid;
+  padding: 5px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+
+
+.voucher-box p {
+  padding: 0 10px;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.voucher-main {
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 600px;
+  padding-top: 20px;
+}
+
+.voucher-box .button {
+  bottom: 0;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  margin-bottom: 30px;
+  padding: 5px 0px;
+  width: 200px;
+  background-color: rgba(255, 127, 80, 0);
+  border: white 1px solid;
+}
+
+.button:hover {
+  transform: scale(0.98);
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 40px;
+}
+
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.voucher-code {
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  top: 20%;
+}
+
+.inputwrapper {
+  margin-bottom: 20px;
+}
+
+
+.newline {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+input[type=text], input[type=email], input[type=number], input[type=date], textarea {
+  padding: 5px 20px;
+  width: 70%;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.upper-part {
+  padding: 10px;
+}
+
+li i {
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  line-height: 90px;
+}
+
+.mybutton {
+  margin-left: 20px;
+}
+
+.amount {
+  font-size: 20px;
+}
+
+.quantity {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+i {
+  font-size: 20px;
+}
+
+li {
+  margin: 10px 0px;
+  line-height: 35px;
+}
+
+
+.selection-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-container {
+margin-top: 20px;
+  height: 70vh;
+  display: flex;
+}
+
+.contact-info {
+
+  height: 100%;
+  width: 50%;
+  color: white;
+}
+
+.map-box {
+  height: 100%;
+
+  width: 100%;
+}
+
+.opening-hours {
+  height: 50%;;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+hr {
+  width: 95%;
+}
+
+ul {
+  line-height: 10px;
+}
+
+.times {
+  width: 50%;
+  text-align: center;
+}
+
+.times ul {
+  text-align: center;
+}
+
+.open {
+  text-align: center;
+}
+
+.times ul li {
+  line-height: 20px;
+  margin-left: -30px;
+}
+
+.socials {
+text-align: center;
+  width: 50%;
+}
+
+.contact-info-2 {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 50%;
+}
+
+
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+/* compound selector: select a tags in nav */
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+.contact-main {
+  height: auto;
+  display: flex;
+  width: auto;
+}
+
