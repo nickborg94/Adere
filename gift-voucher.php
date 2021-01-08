@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adere Restaurant | Gift Voucher</title>
-    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="/assets/css/indexstyle.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://kit.fontawesome.com/d5321eb3ba.js" crossorigin="anonymous"></script>
@@ -13,15 +13,7 @@
 
 <body>
     <div class="container">
-        <header><img src="images/logo-adare-restaurant.png" alt="logo">
-        </header>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="menu.html">MENU</a>
-            <a href="bookatable.html">BOOK A TABLE</a>
-            <a href="gift-voucher.html">GIFT VOUCHER</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
+    <?php include 'includes/navbar.inc' ?>
 
         <main class="voucher-main">
             <h1 class="voucher-h1">I'd like to...</h1>
@@ -94,9 +86,7 @@
             </div>
         </main>
 
-        <footer>
-            <p>Main St, Blackabbey, Adare, Co. Limerick - Copyright 2017©</p>
-        </footer>
+        <?php include 'includes/footer.inc' ?>
     </div>
 </body>
 
